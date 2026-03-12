@@ -6,8 +6,16 @@ int n;            // membuat variable inputan n
 
 
 void input() {    // procedure input
-    while(true){
+       while(true){
         cout << "Masukan Jumlah Data Pada Array : ";
         cin >> n;
+
+        if (n <= 20){
+            break;
+        }
+        else{
+            cout << "\nArray Tidak Boleh Lebih dari 20\n";
+        }
     }
+
 
