@@ -29,4 +29,47 @@ void input() {    // procedure input
     }
 }
 
+void insertionSort(){   // procedure insertion sort
+    int temp;
+    int j;
 
+    for (int i = 0; i < n; i++)
+    {
+        temp = arr[i];
+        j = i - 1;
+
+        while (j >= 0 && arr[j] > temp)
+        {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+
+        arr[j + 1] = temp;
+
+        cout << "\nStep " << i << " : ";
+        for (int k = 0; k < n; k++)
+        {
+            cout << arr[k] << " ";
+        }
+    }
+}
+
+void display(){
+    cout << endl;
+    cout << "\n====================";
+    cout << "\nElement Array" << endl;
+    cout << "====================" << endl;
+
+    for(int j = 0; j < n; j++){
+        cout << arr[j] << endl;
+    }
+
+    cout << endl;
+}
+
+int main(){
+    input();
+    insertionSort();
+    display();
+    system("pause");
+}
