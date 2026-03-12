@@ -46,30 +46,4 @@ void insertionSort(){   // procedure insertion sort
 
         arr[j + 1] = temp;
 
-        cout << "\nStep " << i << " : ";
-        for (int k = 0; k < n; k++)
-        {
-            cout << arr[k] << " ";
-        }
-    }
-}
-
-void display(){
-    cout << endl;
-    cout << "\n====================";
-    cout << "\nElement Array" << endl;
-    cout << "====================" << endl;
-
-    for(int j = 0; j < n; j++){
-        cout << arr[j] << endl;
-    }
-
-    cout << endl;
-}
-
-int main(){
-    input();
-    insertionSort();
-    display();
-    system("pause");
-}
+     
